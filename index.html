@@ -10,6 +10,13 @@
 <body>
     <style>
        @import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap');
+
+       *{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        box-sizing: border-box;
+       }
         body{
             margin: 0;
             padding: 0;
@@ -27,7 +34,14 @@
             position: relative;
             background: transparent linear-gradient(180deg, #236561 0%, #293746 100%) 0% 0% no-repeat padding-box;
         }
-        .roadmap-con .roadmap-bg{
+        .roadmap-con .roadmap-bg-mobile{
+            display: none;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            
+        }
+        .roadmap-con .roadmap-bg-web{
             display: block;
             width: 100%;
             height: 100%;
@@ -115,6 +129,17 @@
             transform: translate(-50%, -50%) rotate(357deg);
         }
 
+        @media(max-width:767px) {
+           
+            .roadmap-con .roadmap-bg-mobile{
+                display: block;
+            }
+            .roadmap-con .roadmap-bg-web{
+            display: none;
+            
+        }
+        }
+        
         @media(max-width:670px) {
 
             .roadmap-con .roadmap-steps-text h3{
@@ -151,7 +176,8 @@
     </style>
 
     <div class="roadmap-con">
-       <img class="roadmap-bg" src="images/Phone-sticks.png" alt="">
+       <img class="roadmap-bg-mobile" src="images/Phone-sticks.png" alt="">
+       <img class="roadmap-bg-web" src="images/web-sticks.png" alt="">
         <div class="roadmap-steps roadmap-step-1">
             <img src="images/phone-plank-01.png" alt="">
             <div class="roadmap-steps-text">
