@@ -29,7 +29,7 @@
 
         }
         .roadmap-con{
-            max-width: 767px;
+            max-width: 1250px;
             color: #fff;
             position: relative;
             background: transparent linear-gradient(180deg, #236561 0%, #293746 100%) 0% 0% no-repeat padding-box;
@@ -128,8 +128,41 @@
         .roadmap-con .roadmap-step-6 .roadmap-steps-text{
             transform: translate(-50%, -50%) rotate(357deg);
         }
+        @media(min-width:1025px) {
 
-        @media(max-width:767px) {
+            .roadmap-con .roadmap-step-1{
+                top: 6%;
+                left: 9%;
+                max-width: 32%;;
+            } 
+            .roadmap-con .roadmap-step-2{
+                top: 5%;
+                right: 10%;
+                max-width: 35%;
+           }
+            .roadmap-con .roadmap-step-3{
+                top: 36%;
+                left: 18%;
+                max-width: 28%;
+            }
+            .roadmap-con .roadmap-step-4{
+                top: 43%;
+                right: 17%;
+                max-width: 33%;
+            }
+            .roadmap-con .roadmap-step-5{
+                top: 65%;
+                left: 10%;
+                max-width: 30%;
+            }
+            .roadmap-con .roadmap-step-6{
+                top: 66%;
+                left: 46%;
+                max-width: 42%;   
+            }  
+       }
+ 
+        @media(max-width:1024px) {
            
             .roadmap-con .roadmap-bg-mobile{
                 display: block;
